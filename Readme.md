@@ -7,7 +7,8 @@ connects to an external 2.5GBASE-T PHY through 2500BASE-X on one SERDES lane.
 - **Target device:** LFCPNX-100-9CBG256I (customer board; no Lattice evaluation board uses this package).
 - **Toolchain:** Lattice Radiant 2026.1 with Synplify Pro.
 - **Status:** design proposal revision 3 (all questions resolved except Q8, deferred). The pinout
-  check build passes (see below); the bridge RTL is not written yet.
+  check build passes (see below). The bridge RTL (the blocks in the diagram) is not yet written;
+  only the pinout test top exists.
 
 ## Block diagram
 
