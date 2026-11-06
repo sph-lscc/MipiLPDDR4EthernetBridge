@@ -1,0 +1,83 @@
+set device "LFCPNX-100"
+set device_int "jd5d80"
+set package "CBG256"
+set package_int "CBG256"
+set speed "9_High-Performance_1.0V"
+set speed_int "12"
+set operation "Industrial"
+set family "LFCPNX"
+set architecture "jd5d00"
+set partnumber "LFCPNX-100-9CBG256I"
+set WRAPPER_INST "lscc_dphy_rx_inst"
+set FAMILY "LFCPNX"
+set DEVICE "LFCPNX-100"
+set SIM_MODE 0
+set RX_TYPE "CSI2"
+set DPHY_RX_IP "LATTICE"
+set NUM_RX_LANE 2
+set RX_GEAR 8
+set DESKEW_EN "DISABLED"
+set BYTECLK_MHZ 187
+set BYTECLK_MHZ_FLOAT 187.500000
+set RX_LP_M_FACTOR 1
+set RX_LP_D_FACTOR 75
+set RX_CLK_MODE "HS_ONLY"
+set SYNCCLK_MHZ 150.000000
+set HSEL "DISABLED"
+set DYN_DEL_EN "OFF"
+set DDRDLL_EN "OFF"
+set DDRDLL_SHARE "OFF"
+set DYN_SEQ_ON "OFF"
+set TEST_PATTERN "0b10000000001000000000000000000000"
+set CIL_BYPASS "CIL_BYPASSED"
+set LANE_ALIGN "ON"
+set PARSER "ON"
+set AXI4 "OFF"
+set LMMI "OFF"
+set CSRCMD_IMPL "SYNC"
+set CRC_CHECK "OFF"
+set DYNAMIC_RECONFIG "OFF"
+set REF_DT "6'h30"
+set VCX_ON "OFF"
+set BACK2BACK "OFF"
+set DROP_NULL "OFF"
+set DATA_SETTLE_CYC 15
+set T_DATA_SETTLE_INT 15
+set T_DATA_SETTLE "0b001111"
+set T_CLK_SETTLE_INT 22
+set T_CLK_SETTLE "0b010110"
+set DYN_DATSETTLE "OFF"
+set FIFO_DEPTH 4
+set FIFO_TYPE "HARD_IP"
+set RX_FIFO "ON"
+set RX_FIFO_TYPE "PINGPONG"
+set RX_FIFO_IMPL "HARD_IP"
+set RX_FIFO_DEPTH 256
+set NUM_QUE_ENT 4
+set RX_FIFO_PKT_DLY 8
+set RX_FIFO_CTR_WIDTH 3
+set FR_FIFO_CLKMODE "DC"
+set FIFO_IF "ALIGNED"
+set RX_FIFO_MISC "OFF"
+set DELAYB_DELMODE "ECLK_CENTERED"
+set DELAYB_COARSEDEL "0NS"
+set DELAYB_DELVAL "26"
+set CTRL_DYNDEL "OFF"
+
+
+#-------------------------------------------------------------------------------
+# GENERAL NOTES
+# 
+#	A pre-synthesis constraint file in LDC format 
+#   (<ip_instance_path>/constraints/<instance_name>.ldc) that is automatically 
+#   used and propagated by the SW tool.
+#
+#   IP does not include clock-related constraints in pre-synthesis level. 
+#   You should constrain all clocks in the top-level constraint file of 
+#   the system.
+#
+#   Example evaluation post-synthesis constraint files in PDC format are 
+#   also provided under ip_instance_path>/eval/ directory. They can be used 
+#   to give you starting point for constraints of the system-level design. 
+#-------------------------------------------------------------------------------
+

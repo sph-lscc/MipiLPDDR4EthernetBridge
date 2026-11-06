@@ -1,0 +1,992 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>eth_2p5g_lane0</ipxact:name>
+    <ipxact:version>1.2.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_2p5_gbe_top_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="eth_2p5g" vendor="latticesemi.com" version="1.2.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="PMI_FAMILY">LFCPNX</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IP_OPTION">MAC + PHY</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPEED_SEL">16-bit GMII</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="HOST_IF">APB</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_INTERFACE">APB</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="ADDR_WIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_WIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DYN_SPEED_SEL">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MC_ADDR_FILT">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TX_PAUSE_PORTS">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="STATS_CNTR">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="STATS_WIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TX_STATS_CNTR">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_STATS_CNTR">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FAST_MODE">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="LOOPBACK_MODE">No Loopback</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="LANE_ID_MPPHY">AUTO</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="LANE_ID">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PMA_REFCLK">sdq0_refclk</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHY_RX_TERM_ACDC_L0">0b1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_LOSS_PORT_EN">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_ADP_EQ_EN">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHY_RX_DFE_BYPASS_L0">ENABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHY_RX_EQ_DFE_TAP1_L0">0b00001111</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_ATN_BLK">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PHY_RX_EQ_ATT_LVL_L0">0b000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RXEQ_ENABLE_DR0">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RXEQ_ALGO_DR0">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RXEQ_ENABLE_DR1">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RXEQ_ALGO_DR1">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RXEQ_ENABLE_DR2">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RXEQ_ALGO_DR2">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEN12_ENA_POST_A1A2">ENABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEN12_ENA_PREA0">ENABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEN12_ENA_POST_A0">ENABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEN3_ENA_POST_A1A2">DISABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEN3_ENA_PREA0">DISABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="GEN3_ENA_POST_A0">DISABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PRTAD">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DEVAD">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FRAME_TYPE">Super Jumbo</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PMI_DEPTH">8192</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DEBUG_ON">False</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.reset_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="reset_n_i"/>
+                <ipxact:externalPortReference portRef="reset_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.sysbus_clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="sysbus_clk_i"/>
+                <ipxact:externalPortReference portRef="sysbus_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.rxmac_clk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="rxmac_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.txmac_clk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="txmac_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.xgmii_rxd_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="xgmii_rxd_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.xgmii_rxc_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="xgmii_rxc_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.xgmii_txd_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="xgmii_txd_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.xgmii_txc_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="xgmii_txc_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_rx_d_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_rx_d_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_rx_dv_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_rx_dv_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_rx_err_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_rx_err_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_tx_d_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_tx_d_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_tx_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_tx_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_tx_err_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_tx_err_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_rx_d_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_rx_d_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_rx_dv_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_rx_dv_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_rx_err_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_rx_err_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_tx_d_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_tx_d_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_tx_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_tx_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_tx_err_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_tx_err_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mii_rx_d_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mii_rx_d_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mii_rx_dv_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mii_rx_dv_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mii_rx_err_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mii_rx_err_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mii_tx_d_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mii_tx_d_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mii_tx_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mii_tx_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mii_tx_err_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mii_tx_err_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_tx_tvalid_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_tx_tvalid_i"/>
+                <ipxact:externalPortReference portRef="axis_tx_tvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_tx_tlast_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_tx_tlast_i"/>
+                <ipxact:externalPortReference portRef="axis_tx_tlast_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_tx_tkeep_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_tx_tkeep_i"/>
+                <ipxact:externalPortReference portRef="axis_tx_tkeep_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_tx_tdata_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_tx_tdata_i"/>
+                <ipxact:externalPortReference portRef="axis_tx_tdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_tx_tuser_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_tx_tuser_i"/>
+                <ipxact:externalPortReference portRef="axis_tx_tuser_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_tx_tready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_tx_tready_o"/>
+                <ipxact:externalPortReference portRef="axis_tx_tready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_rx_tvalid_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_rx_tvalid_o"/>
+                <ipxact:externalPortReference portRef="axis_rx_tvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_rx_tlast_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_rx_tlast_o"/>
+                <ipxact:externalPortReference portRef="axis_rx_tlast_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_rx_tkeep_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_rx_tkeep_o"/>
+                <ipxact:externalPortReference portRef="axis_rx_tkeep_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_rx_tdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_rx_tdata_o"/>
+                <ipxact:externalPortReference portRef="axis_rx_tdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>63</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axis_rx_tuser_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axis_rx_tuser_o"/>
+                <ipxact:externalPortReference portRef="axis_rx_tuser_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.tx_statvec_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="tx_statvec_o"/>
+                <ipxact:externalPortReference portRef="tx_statvec_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>27</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.tx_staten_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="tx_staten_o"/>
+                <ipxact:externalPortReference portRef="tx_staten_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.rx_statvec_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="rx_statvec_o"/>
+                <ipxact:externalPortReference portRef="rx_statvec_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>27</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pcsrdy_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pcsrdy_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.rx_staten_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="rx_staten_o"/>
+                <ipxact:externalPortReference portRef="rx_staten_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.apb_psel_i </ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="apb_psel_i "/>
+                <ipxact:externalPortReference portRef="apb_psel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.apb_paddr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="apb_paddr_i"/>
+                <ipxact:externalPortReference portRef="apb_paddr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.apb_pwdata_i </ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="apb_pwdata_i "/>
+                <ipxact:externalPortReference portRef="apb_pwdata_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.apb_pwrite_i </ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="apb_pwrite_i "/>
+                <ipxact:externalPortReference portRef="apb_pwrite_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.apb_penable_i </ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="apb_penable_i "/>
+                <ipxact:externalPortReference portRef="apb_penable_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.apb_pready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="apb_pready_o"/>
+                <ipxact:externalPortReference portRef="apb_pready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.apb_prdata_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="apb_prdata_o"/>
+                <ipxact:externalPortReference portRef="apb_prdata_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.apb_pslverr_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="apb_pslverr_o"/>
+                <ipxact:externalPortReference portRef="apb_pslverr_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.tx_pausreq_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="tx_pausreq_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.tx_paustm_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="tx_paustm_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.refclkp0_ext_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="refclkp0_ext_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.refclkn0_ext_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="refclkn0_ext_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.refclkp1_ext_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="refclkp1_ext_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.refclkn1_ext_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="refclkn1_ext_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pll_0_refclk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pll_0_refclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pll_1_refclk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pll_1_refclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.sd_pll_refclk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="sd_pll_refclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.sd_ext_0_refclk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="sd_ext_0_refclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.sd_ext_1_refclk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="sd_ext_1_refclk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.use_refmux_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="use_refmux_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.diffioclksel_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="diffioclksel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.clksel_i</ipxact:name>
+            <ipxact:tiedValue>2'b10</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="clksel_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_awaddr_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_awaddr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_awvalid_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_awvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_awready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_awready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_wdata_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_wdata_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_wstrb_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_wstrb_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_wvalid_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_wvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_wready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_wready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_bresp_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_bresp_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_bvalid_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_bvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_bready_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_bready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_araddr_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_araddr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_arvalid_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_arvalid_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_arready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_arready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_rdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_rdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_rresp_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_rresp_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_rvalid_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_rvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.axi4l_rready_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="axi4l_rready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pad_refclkn_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pad_refclkn_i"/>
+                <ipxact:externalPortReference portRef="pad_refclkn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pad_refclkp_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pad_refclkp_i"/>
+                <ipxact:externalPortReference portRef="pad_refclkp_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pad_rxn_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pad_rxn_i"/>
+                <ipxact:externalPortReference portRef="pad_rxn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pad_rxp_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pad_rxp_i"/>
+                <ipxact:externalPortReference portRef="pad_rxp_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pad_txn_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pad_txn_o"/>
+                <ipxact:externalPortReference portRef="pad_txn_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pad_txp_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pad_txp_o"/>
+                <ipxact:externalPortReference portRef="pad_txp_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_tx_clk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_tx_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_tx_rst_n_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_tx_rst_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_rx_clk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_rx_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_rx_rst_n_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_rx_rst_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_pcs_clkin_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_pcs_clkin_i"/>
+                <ipxact:externalPortReference portRef="phy_pcs_clkin_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_tx_clk_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_tx_clk_o"/>
+                <ipxact:externalPortReference portRef="phy_tx_clk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_tx_gclk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_tx_gclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_rx_clk_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_rx_clk_o"/>
+                <ipxact:externalPortReference portRef="phy_rx_clk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_rx_gclk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_rx_gclk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_tx_d_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_tx_d_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_tx_en_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_tx_en_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_tx_err_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_tx_err_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.debug_link_timer_short</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="debug_link_timer_short"/>
+                <ipxact:externalPortReference portRef="debug_link_timer_short"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mr_adv_ability</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mr_adv_ability"/>
+                <ipxact:externalPortReference portRef="mr_adv_ability">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mr_an_enable</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mr_an_enable"/>
+                <ipxact:externalPortReference portRef="mr_an_enable"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mr_main_reset</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mr_main_reset"/>
+                <ipxact:externalPortReference portRef="mr_main_reset"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mr_restart_an</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mr_restart_an"/>
+                <ipxact:externalPortReference portRef="mr_restart_an"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mr_an_complete</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mr_an_complete"/>
+                <ipxact:externalPortReference portRef="mr_an_complete"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mr_lp_adv_ability</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mr_lp_adv_ability"/>
+                <ipxact:externalPortReference portRef="mr_lp_adv_ability">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mr_page_rx</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mr_page_rx"/>
+                <ipxact:externalPortReference portRef="mr_page_rx"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.an_link_ok</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="an_link_ok"/>
+                <ipxact:externalPortReference portRef="an_link_ok"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_rx_d_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_rx_d_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_rx_dv_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_rx_dv_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.gmii_16_rx_err_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="gmii_16_rx_err_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_rxval_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_rxval_o"/>
+                <ipxact:externalPortReference portRef="phy_rxval_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_txrdy_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_txrdy_o"/>
+                <ipxact:externalPortReference portRef="phy_txrdy_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phyrdy_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phyrdy_o"/>
+                <ipxact:externalPortReference portRef="phyrdy_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_link_sync_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_link_sync_o"/>
+                <ipxact:externalPortReference portRef="phy_link_sync_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_rxidle_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_rxidle_o"/>
+                <ipxact:externalPortReference portRef="phy_rxidle_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mdc_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mdc_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.md_resetn_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="md_resetn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.mdio_io</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="mdio_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.phy_init_done_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="phy_init_done_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pma_rx0_sigdet_hf_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pma_rx0_sigdet_hf_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>eth_2p5g_lane0.pma_rx0_sigdet_lf_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="eth_2p5g_lane0" portRef="pma_rx0_sigdet_lf_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

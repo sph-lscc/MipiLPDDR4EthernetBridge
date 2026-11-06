@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2026.1.0.37.0" title="pinout_check" device="LFCPNX-100-9CBG256I" performance_grade="9_High-Performance_1.0V" family_int="jd5d00" device_int="jd5d80" package_int="CBG256" operation_int="IND" speed_int="12" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
+        <Options top="pinout_check_top"/>
+        <Source name="../src/ip/osc_clk/osc_clk.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../src/ip/sys_pll/sys_pll.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../src/ip/lpddr4_mc/lpddr4_mc.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../src/ip/csi2_rx_2l_1500/csi2_rx_2l_1500.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../src/ip/eth_2p5g_lane0/eth_2p5g_lane0.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../src/rtl/pinout_check_top.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="../constraints/pinout_check.sdc" type="Pre-Synthesis Constraints File" type_short="SDC">
+            <Options/>
+        </Source>
+        <Source name="../constraints/pinout_check.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="pinout_check1.sty"/>
+</RadiantProject>

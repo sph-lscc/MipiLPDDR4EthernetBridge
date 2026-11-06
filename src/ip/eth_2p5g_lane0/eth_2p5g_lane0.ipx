@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="jd5d00" date="2026 11 05 17:52:27" device="LFCPNX-100" device_int="jd5d80" display_module="2.5 Gb Ethernet" display_vendor="latticesemi.com" family="LFCPNX" gen_platform="IP Generation Executable" gen_platform_version="2026.1.0.37.0" generator="ipgen" library="ip" module="eth_2p5g" name="eth_2p5g_lane0" operation="Industrial" package="CBG256" package_int="CBG256" partnumber="LFCPNX-100-9CBG256I" source_format="Verilog" speed="9_High-Performance_1.0V" speed_int="12" vendor="latticesemi.com" version="1.2.0">
+ <Package>
+  <File modified="2026 11 05 17:52:27" name="rtl/eth_2p5g_lane0_bb.sv" type="black_box_verilog"/>
+  <File modified="2026 11 05 17:52:27" name="eth_2p5g_lane0.cfg" type="cfg"/>
+  <File modified="2026 11 05 17:52:27" name="misc/eth_2p5g_lane0_tmpl.sv" type="template_verilog"/>
+  <File modified="2026 11 05 17:52:27" name="misc/eth_2p5g_lane0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2026 11 05 17:52:27" name="rtl/eth_2p5g_lane0.sv" type="top_level_system_verilog"/>
+  <File modified="2026 11 05 17:52:27" name="constraints/constraint.sdc" stage="lse:all,synplify:all" type="tcl_constraints"/>
+  <File modified="2026 11 05 17:52:27" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2026 11 05 17:52:27" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2026 11 05 17:52:27" name="eval/dut_params.v" type="dependency_file"/>
+  <File modified="2026 11 05 17:52:27" name="eval/dut_inst.v" type="dependency_file"/>
+  <File modified="2026 11 05 17:52:27" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2026 11 05 17:52:27" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/rst_sync.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/tb_data_checker.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/tb_xgmii_mst.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/tod_counter.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/defines.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/ten_gbe_pll.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/tb_gmii_mst.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/tb_top.sv" type="testbench_system_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/tb_axi4l_drv.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/tb_mem.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/tb_axis_mst.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="testbench/tb_apb_mst.v" type="testbench_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/readme.txt" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/tb_top.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/pcs_apb_w.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/pll_1.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/ed_setup.tcl" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/top.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/debounce.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/OSCC.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/tb_top.do" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/traffic_genchk.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/pcs_apb_w_r.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/lfcpnx_2p5g_macphy/cpnx_eval_2p5g.pdc" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/tb_top.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/pcs_apb_w.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/ed_setup.tcl" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/top.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/debounce.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/OSCC.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/tb_top.do" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/traffic_genchk.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/pcs_apb_w_r.v" type="eval_verilog"/>
+  <File modified="2026 07 01 10:29:30" name="eval/versa_top/avantx70_2p5g_macphy/avant_x70_2p5g.pdc" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="eval/multicast_hash/readme.txt" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="eval/multicast_hash/multicast_addr_to_hash.c" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="eval/eval_top.sv" type="eval"/>
+  <File modified="2026 07 01 10:29:30" name="driver/xxv_xethernet.h" type="driver_header"/>
+  <File modified="2026 07 01 10:29:30" name="driver/xxv_xethernet_hw.h" type="driver_header"/>
+  <File modified="2026 07 01 10:29:30" name="driver/xxv_xethernet.c" type="driver_source"/>
+ </Package>
+</RadiantModule>

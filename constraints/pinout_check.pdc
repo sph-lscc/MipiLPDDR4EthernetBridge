@@ -1,0 +1,145 @@
+# -----------------------------------------------------------------------------
+# pinout_check.pdc  -  post-synthesis constraints for the pinout check build
+# Device : LFCPNX-100-9CBG256I
+# Source : docs/design_proposal.md, Section 5 (revision 3). Balls, banks and
+#          DQS groups are from FPGA-SC-02022 rev 1.0 (CBG256 column).
+# -----------------------------------------------------------------------------
+
+# ---- bank voltages (proposal Section 5.2) ------------------------------------
+ldc_set_sysconfig {CONFIGIO_VOLTAGE_BANK0=1.8 CONFIGIO_VOLTAGE_BANK1=1.8}
+ldc_set_vcc -bank 0 1.8
+ldc_set_vcc -bank 1 1.8
+ldc_set_vcc -bank 2 1.8
+ldc_set_vcc -bank 3 1.1
+ldc_set_vcc -bank 4 1.1
+ldc_set_vcc -bank 5 1.2
+ldc_set_vcc -bank 6 1.8
+ldc_set_vcc -bank 7 1.8
+
+# ---- reserved: VREF3_1 (PB110A) must stay free for the LPDDR4 data bank ------
+ldc_prohibit -site {R5}
+
+# ---- reset and status (bank 7, 1.8 V) ----------------------------------------
+ldc_set_location -site {F11} [get_ports rst_n_i]
+ldc_set_location -site {F13} [get_ports {led_o[0]}]
+ldc_set_location -site {F14} [get_ports {led_o[1]}]
+ldc_set_location -site {E16} [get_ports {led_o[2]}]
+ldc_set_location -site {F16} [get_ports {led_o[3]}]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18 PULLMODE=UP} [get_ports rst_n_i]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS18} [get_ports {led_o[*]}]
+
+# ---- LPDDR4 byte 0: bank 3, DQS group 150 ------------------------------------
+ldc_set_location -site {N3} [get_ports {ddr_dq_io[0]}]
+ldc_set_location -site {P2} [get_ports {ddr_dq_io[1]}]
+ldc_set_location -site {M3} [get_ports {ddr_dq_io[2]}]
+ldc_set_location -site {N2} [get_ports {ddr_dq_io[3]}]
+ldc_set_location -site {M4} [get_ports {ddr_dq_io[4]}]
+ldc_set_location -site {L4} [get_ports {ddr_dq_io[5]}]
+ldc_set_location -site {M2} [get_ports {ddr_dq_io[6]}]
+ldc_set_location -site {L2} [get_ports {ddr_dq_io[7]}]
+ldc_set_location -site {M1} [get_ports {ddr_dmi_io[0]}]
+ldc_set_location -site {P1} [get_ports {ddr_dqs_io[0]}]
+
+# ---- LPDDR4 byte 1: bank 3, DQS group 114 (VREF3_1 = R5 left free) -----------
+ldc_set_location -site {P4} [get_ports {ddr_dq_io[8]}]
+ldc_set_location -site {P5} [get_ports {ddr_dq_io[9]}]
+ldc_set_location -site {M5} [get_ports {ddr_dq_io[10]}]
+ldc_set_location -site {N4} [get_ports {ddr_dq_io[11]}]
+ldc_set_location -site {R4} [get_ports {ddr_dq_io[12]}]
+ldc_set_location -site {R3} [get_ports {ddr_dq_io[13]}]
+ldc_set_location -site {R2} [get_ports {ddr_dq_io[14]}]
+ldc_set_location -site {P3} [get_ports {ddr_dq_io[15]}]
+ldc_set_location -site {N5} [get_ports {ddr_dmi_io[1]}]
+ldc_set_location -site {T3} [get_ports {ddr_dqs_io[1]}]
+
+# ---- LPDDR4 CA and control: bank 4, DQS group 54 -----------------------------
+ldc_set_location -site {K10} [get_ports {ddr_ca_o[0]}]
+ldc_set_location -site {L10} [get_ports {ddr_ca_o[1]}]
+ldc_set_location -site {P10} [get_ports {ddr_ca_o[2]}]
+ldc_set_location -site {R10} [get_ports {ddr_ca_o[3]}]
+ldc_set_location -site {T10} [get_ports {ddr_ca_o[4]}]
+ldc_set_location -site {T9}  [get_ports {ddr_ca_o[5]}]
+ldc_set_location -site {R9}  [get_ports {ddr_cke_o[0]}]
+ldc_set_location -site {P9}  [get_ports {ddr_cs_o[0]}]
+# 100 MHz reference clock on PCLKT4_1 (HCSL oscillator, DC-coupled)
+ldc_set_location -site {N9}  [get_ports ddr_refclk_i]
+ldc_set_port -iobuf {IO_TYPE=LVSTLD_I} [get_ports ddr_refclk_i]
+
+# ---- LPDDR4 CK and RESET_N: bank 4, DQS group 102 ----------------------------
+ldc_set_location -site {P8} [get_ports {ddr_ck_o[0]}]
+ldc_set_location -site {L7} [get_ports ddr_reset_n_o]
+
+# ---- MIPI CSI-2, 2 lanes: bank 5, DQS group 42 -------------------------------
+ldc_set_location -site {R14} [get_ports mipi_clk_p]
+ldc_set_location -site {R13} [get_ports mipi_clk_n]
+ldc_set_location -site {P14} [get_ports {mipi_d_p[0]}]
+ldc_set_location -site {P13} [get_ports {mipi_d_n[0]}]
+ldc_set_location -site {N12} [get_ports {mipi_d_p[1]}]
+ldc_set_location -site {P12} [get_ports {mipi_d_n[1]}]
+ldc_set_port -iobuf {IO_TYPE=MIPI_DPHY} [get_ports mipi_clk_p]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS12H} [get_ports mipi_clk_n]
+ldc_set_port -iobuf {IO_TYPE=MIPI_DPHY} [get_ports {mipi_d_p[*]}]
+ldc_set_port -iobuf {IO_TYPE=LVCMOS12H} [get_ports {mipi_d_n[*]}]
+
+# ---- 2500BASE-X: SERDES lane 0 and quad reference clock ----------------------
+ldc_set_location -site {D10} [get_ports eth_refclk_p]
+ldc_set_location -site {E10} [get_ports eth_refclk_n]
+ldc_set_location -site {C14} [get_ports eth_rx_p]
+ldc_set_location -site {B13} [get_ports eth_rx_n]
+ldc_set_location -site {A15} [get_ports eth_tx_p]
+ldc_set_location -site {A14} [get_ports eth_tx_n]
+
+# =============================================================================
+# Timing
+# =============================================================================
+# board clocks
+create_clock -name {ddr_refclk}   -period 10.0     [get_ports ddr_refclk_i]
+create_clock -name {eth_refclk_p} -period 6.4      [get_ports eth_refclk_p]
+# MIPI clock lane: 1500 Mbps DDR -> 750 MHz
+create_clock -name {mipi_clk_p}   -period 1.333333 [get_ports mipi_clk_p]
+
+# LPDDR4 controller clocks (copied from src/ip/lpddr4_mc/eval/constraint.pdc,
+# which asks for them to be copied into the project PDC)
+create_generated_clock -name {eclk_w} -source [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 16 -divide_by 3 [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS }]
+set_clock_uncertainty -setup 0.150 [get_clocks eclk_w]
+create_generated_clock -name {sclk_o} -source [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u0_ECLKDIV.ECLKDIV_inst/ECLKIN}] -divide_by 4 [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u1_clock_sync/u0_ECLKDIV.ECLKDIV_inst/DIVOUT }]
+set_clock_uncertainty -setup 0.250 [get_clocks sclk_o]
+create_generated_clock -name {sync_clk} -source [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -divide_by 2 [get_pins {*/lscc_lpddr4_mc_inst/u_lp4mem/u_pll/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS2 }]
+set_clock_uncertainty -setup 0.250 [get_clocks sync_clk]
+
+# system PLL (150 MHz oscillator in): AXI clock and APB clock
+create_clock -name {aclk} -period 6.666667 [get_pins {u_pll/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP}]
+create_clock -name {pclk} -period 20.0     [get_pins {u_pll/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS}]
+set_clock_uncertainty -setup 0.250 [get_clocks {aclk pclk}]
+
+# PCS clocks of the 2.5GbE PHY, on the PCS primitive pins named in the IP's own
+# constraint file (src/ip/eth_2p5g_lane0/constraints/constraint.sdc). The wider
+# patterns *PCS_TXCLKOUT* / *RXOUTCLK* also matched points inside the encrypted
+# IP and gave a false 1.5 ns clock skew in the hold analysis (build 1).
+create_clock -name {pcs_txclk} -period 6.4 [get_pins {u_eth.lscc_2p5_gbe_top_inst.*.lscc_2p5_gbephy_inst.u_mpcs_ten_gbe_wrap.u_mpcs_twopointfive_gbe.lscc_mpcs_top_inst.*.u_PCSX*_pcs_merge_pcs_merge_pcs_merge_pcs_merge_pcs_merge_pcs_merge_pcsx*_merge.PCSX*_inst/CH*_PIPE_PCS_TXCLKOUT}]
+create_clock -name {pcs_rxclk} -period 6.4 [get_pins {u_eth.lscc_2p5_gbe_top_inst.*.lscc_2p5_gbephy_inst.u_mpcs_ten_gbe_wrap.u_mpcs_twopointfive_gbe.lscc_mpcs_top_inst.*.u_PCSX*_pcs_merge_pcs_merge_pcs_merge_pcs_merge_pcs_merge_pcs_merge_pcsx*_merge.PCSX*_inst/CH*_RXOUTCLK}]
+
+# CSI-2 byte clock: 1500 Mbps / gear 8 = 187.5 MHz (D-PHY receiver ECLKDIV output)
+create_clock -name {byte_clk} -period 5.333333 [get_pins -hierarchical {*u_eclkdiv*/DIVOUT}]
+# The 150 MHz oscillator clock is declared by the osc_clk IP.
+
+# Crossings: the controller's AXI/APB CDC is inside the IP; the rest of this
+# design crosses only through rst_sync / bit_sync.
+set_clock_groups -asynchronous \
+  -group [get_clocks {ddr_refclk eclk_w sclk_o sync_clk}] \
+  -group [get_clocks {aclk}] \
+  -group [get_clocks {pclk}] \
+  -group [get_clocks {eth_refclk_p}] \
+  -group [get_clocks {pcs_txclk}] \
+  -group [get_clocks {pcs_rxclk}] \
+  -group [get_clocks {u_osc_hf_clk_out_o}] \
+  -group [get_clocks {mipi_clk_p byte_clk}]
+
+# asynchronous I/O
+set_false_path -from [get_ports {rst_n_i}]
+set_false_path -to   [get_ports {led_o[*]}]
+set_false_path -to   [get_ports {ddr_reset_n_o}]
+
+# D-PHY receiver internal FIFO resets (as RD-02326)
+set_false_path -through [get_pins -hierarchical {u_dphy/lscc_dphy_rx_inst/*/*/*/*/*/*/*/*/*/RSTW}]
+set_false_path -through [get_pins -hierarchical {u_dphy/lscc_dphy_rx_inst/*/*/*/*/*/*/*/*/*/RPRST}]

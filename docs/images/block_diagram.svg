@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="960" viewBox="0 0 1500 960" font-family="Helvetica, Arial, sans-serif">
+<title>MIPI CSI-2 to 2.5GbE bridge with LPDDR4 buffer - block diagram</title>
+<defs><marker id="ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1f6feb"/></marker><marker id="sd" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#1f6feb"/></marker><marker id="ac" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c45f00"/></marker><marker id="sc" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#c45f00"/></marker><marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1a7f37"/></marker><marker id="sk" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10 0 L0 5 L10 10 z" fill="#1a7f37"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="30" font-size="18" font-weight="bold" fill="#1f2328" text-anchor="start">MIPI CSI-2 to 2.5GbE UDP bridge with LPDDR4 buffer</text>
+<text x="20" y="50" font-size="12" font-weight="normal" fill="#59636e" text-anchor="start">CertusPro-NX LFCPNX-100-9CBG256I  -  design proposal revision 3  -  IP = Lattice IP, M2E = derived from MIPI2Ethernet, new = new RTL</text>
+<rect x="200" y="70" width="1060" height="740" rx="10" fill="#ffffff" stroke="#59636e" stroke-width="1"/>
+<text x="212" y="90" font-size="12" font-weight="bold" fill="#59636e" text-anchor="start">FPGA  LFCPNX-100-9CBG256I</text>
+<rect x="220" y="100" width="240" height="300" rx="10" fill="#fff4e5" stroke="#59636e" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="232" y="120" font-size="12" font-weight="bold" fill="#59636e" text-anchor="start">byte_clk 187.5 MHz</text>
+<rect x="480" y="100" width="330" height="430" rx="10" fill="#eaf2ff" stroke="#59636e" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="492" y="120" font-size="12" font-weight="bold" fill="#59636e" text-anchor="start">aclk 150 MHz (AXI4, 128-bit)</text>
+<rect x="480" y="550" width="330" height="170" rx="10" fill="#f3eaff" stroke="#59636e" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="492" y="570" font-size="12" font-weight="bold" fill="#59636e" text-anchor="start">sclk 133.33 MHz</text>
+<rect x="830" y="100" width="240" height="430" rx="10" fill="#eefbf1" stroke="#59636e" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="842" y="120" font-size="12" font-weight="bold" fill="#59636e" text-anchor="start">PCS clocks 156.25 MHz</text>
+<rect x="830" y="550" width="410" height="170" rx="10" fill="#fdf0f0" stroke="#59636e" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="842" y="570" font-size="12" font-weight="bold" fill="#59636e" text-anchor="start">pclk 50 MHz (set-up, no CPU)</text>
+<rect x="220" y="550" width="240" height="200" rx="10" fill="#f6f8fa" stroke="#59636e" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="232" y="570" font-size="12" font-weight="bold" fill="#59636e" text-anchor="start">Clocking</text>
+<rect x="20" y="150" width="150" height="90" rx="6" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.2"/>
+<text x="95.0" y="170" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">Camera sensor</text>
+<text x="95.0" y="187" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">MIPI CSI-2</text>
+<text x="95.0" y="202" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">2 lanes x 1.5 Gbps</text>
+<text x="95.0" y="217" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">I2C set-up</text>
+<rect x="500" y="840" width="300" height="90" rx="6" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.2"/>
+<text x="650.0" y="860" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">LPDDR4  MT53E512M16D1</text>
+<text x="650.0" y="877" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">8 Gb, x16, single rank</text>
+<text x="650.0" y="892" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">1066 Mbps, VDDQ 1.1 V</text>
+<text x="650.0" y="907" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">frame FIFO (ring buffer)</text>
+<rect x="1290" y="395" width="180" height="100" rx="6" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.2"/>
+<text x="1380.0" y="415" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">2.5GBASE-T PHY</text>
+<text x="1380.0" y="432" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">external PHY</text>
+<text x="1380.0" y="447" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">2500BASE-X host side</text>
+<text x="1380.0" y="462" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">link fixed at 2.5 Gbps</text>
+<rect x="1290" y="560" width="180" height="60" rx="6" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.2"/>
+<text x="1380.0" y="580" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">RJ45 / host</text>
+<text x="1380.0" y="597" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">UDP stream, MTU 1500</text>
+<rect x="240" y="150" width="200" height="90" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="340.0" y="170" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_dphy</text>
+<text x="340.0" y="187" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">csi2_rx_2l_1500</text>
+<text x="340.0" y="202" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">dphy_rx 2.2.0, soft D-PHY</text>
+<text x="340.0" y="217" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">CSI-2 parser, fixed DT/VC</text>
+<rect x="412" y="141" width="24" height="16" rx="3" fill="#1f2328"/>
+<text x="424.0" y="153" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">IP</text>
+<rect x="240" y="290" width="200" height="90" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="340.0" y="310" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_cap</text>
+<text x="340.0" y="327" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">CSI-2 line capture</text>
+<text x="340.0" y="342" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">16 -&gt; 128-bit packing</text>
+<text x="340.0" y="357" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">line descriptors</text>
+<rect x="405" y="281" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="420.5" y="293" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">M2E</text>
+<rect x="500" y="150" width="130" height="90" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="565.0" y="170" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_wfifo</text>
+<text x="565.0" y="187" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">async FIFO</text>
+<text x="565.0" y="202" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">byte_clk -&gt; aclk</text>
+<text x="565.0" y="217" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">data + descriptors</text>
+<rect x="595" y="141" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="610.5" y="153" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">new</text>
+<rect x="660" y="150" width="130" height="90" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="725.0" y="170" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_ring</text>
+<text x="725.0" y="187" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">ring-buffer</text>
+<text x="725.0" y="202" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">manager: pointers,</text>
+<text x="725.0" y="217" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">drop whole frames</text>
+<rect x="755" y="141" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="770.5" y="153" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">new</text>
+<rect x="500" y="290" width="130" height="90" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="565.0" y="310" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_wdma</text>
+<text x="565.0" y="327" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">write DMA</text>
+<text x="565.0" y="342" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">AXI4 bursts</text>
+<text x="565.0" y="357" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">up to 64 beats</text>
+<rect x="595" y="281" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="610.5" y="293" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">new</text>
+<rect x="660" y="290" width="130" height="90" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="725.0" y="310" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_rdma</text>
+<text x="725.0" y="327" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">read DMA</text>
+<text x="725.0" y="342" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">AXI4 bursts</text>
+<text x="725.0" y="357" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">lines in order</text>
+<rect x="755" y="281" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="770.5" y="293" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">new</text>
+<rect x="520" y="430" width="240" height="80" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="640.0" y="450" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_axi_arb</text>
+<text x="640.0" y="467" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">AXI4 write / read arbitration</text>
+<text x="640.0" y="482" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">128-bit, about 5.4 Gbps peak load</text>
+<rect x="725" y="421" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="740.5" y="433" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">new</text>
+<rect x="540" y="590" width="220" height="100" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="650.0" y="610" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_mc</text>
+<text x="650.0" y="627" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">lpddr4_mc</text>
+<text x="650.0" y="642" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">memory_controller 2.7.1</text>
+<text x="650.0" y="657" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">x16, 1066 Mbps (533 MHz)</text>
+<text x="650.0" y="672" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">AXI4 slave, gear 8</text>
+<rect x="732" y="581" width="24" height="16" rx="3" fill="#1f2328"/>
+<text x="744.0" y="593" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">IP</text>
+<rect x="850" y="150" width="200" height="80" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="950.0" y="170" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_rfifo</text>
+<text x="950.0" y="187" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">async FIFO</text>
+<text x="950.0" y="202" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">aclk -&gt; PCS TX clock</text>
+<rect x="1015" y="141" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="1030.5" y="153" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">new</text>
+<rect x="850" y="260" width="200" height="100" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="950.0" y="280" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_udp</text>
+<text x="950.0" y="297" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">UDP/IPv4 packetizer</text>
+<text x="950.0" y="312" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">32-byte stream header</text>
+<text x="950.0" y="327" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">ARP and ping replies</text>
+<text x="950.0" y="342" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">static IP/MAC/port</text>
+<rect x="1015" y="251" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="1030.5" y="263" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">M2E</text>
+<rect x="850" y="400" width="200" height="100" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="950.0" y="420" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_eth</text>
+<text x="950.0" y="437" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">eth_2p5g_lane0</text>
+<text x="950.0" y="452" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">eth_2p5g 1.2.0</text>
+<text x="950.0" y="467" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">MAC + 2500BASE-X PCS</text>
+<text x="950.0" y="482" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">SERDES lane 0</text>
+<rect x="1022" y="391" width="24" height="16" rx="3" fill="#1f2328"/>
+<text x="1034.0" y="403" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">IP</text>
+<rect x="850" y="590" width="180" height="100" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="940.0" y="610" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_i2c_init</text>
+<text x="940.0" y="627" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">I2C master</text>
+<text x="940.0" y="642" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">fixed sensor</text>
+<text x="940.0" y="657" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">register list</text>
+<rect x="995" y="581" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="1010.5" y="593" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">new</text>
+<rect x="1045" y="590" width="180" height="100" rx="6" fill="#ffffff" stroke="#1f2328" stroke-width="1.2"/>
+<text x="1135.0" y="610" font-size="13" font-weight="bold" fill="#1f2328" text-anchor="middle">u_mdio_init</text>
+<text x="1135.0" y="627" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">MDIO master</text>
+<text x="1135.0" y="642" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">fixed PHY</text>
+<text x="1135.0" y="657" font-size="11" font-weight="normal" fill="#59636e" text-anchor="middle">register list</text>
+<rect x="1190" y="581" width="31" height="16" rx="3" fill="#1f2328"/>
+<text x="1205.5" y="593" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">new</text>
+<text x="235" y="600" font-size="11" font-weight="normal" fill="#1a7f37" text-anchor="start">osc_clk 150 MHz (internal)</text>
+<text x="235" y="616" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">  D-PHY sync, PCS calibration</text>
+<text x="235" y="638" font-size="11" font-weight="normal" fill="#1a7f37" text-anchor="start">sys_pll -&gt; aclk 150, pclk 50 MHz</text>
+<text x="235" y="660" font-size="11" font-weight="normal" fill="#1a7f37" text-anchor="start">100 MHz HCSL -&gt; LPDDR4 PLL</text>
+<text x="235" y="676" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">  ball N9/M9 (PCLKT4_1)</text>
+<text x="235" y="698" font-size="11" font-weight="normal" fill="#1a7f37" text-anchor="start">156.25 MHz -&gt; SERDES quad</text>
+<text x="235" y="714" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">  ball D10/E10 (SDQ0_REFCLK)</text>
+<text x="235" y="736" font-size="11" font-weight="normal" fill="#1a7f37" text-anchor="start">byte_clk from MIPI clock lane</text>
+<path d="M 170 195 L 240 195" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<path d="M 340 240 L 340 290" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<path d="M 440 335 L 470 335 L 470 195 L 500 195" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<path d="M 565 240 L 565 290" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<path d="M 565 380 L 565 430" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<path d="M 725 430 L 725 380" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<path d="M 700 510 L 700 590" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)" marker-start="url(#sd)"/>
+<text x="708" y="540" font-size="11" font-weight="normal" fill="#1f6feb" text-anchor="start">AXI4</text>
+<path d="M 650 690 L 650 840" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)" marker-start="url(#sd)"/>
+<path d="M 790 335 L 815 335 L 815 190 L 850 190" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<path d="M 950 230 L 950 260" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<path d="M 950 360 L 950 400" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<path d="M 1050 445 L 1290 445" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)" marker-start="url(#sd)"/>
+<path d="M 1380 495 L 1380 560" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)" marker-start="url(#sd)"/>
+<path d="M 630 320 L 645 320 L 645 215 L 660 215" fill="none" stroke="#c45f00" stroke-width="2.0" stroke-dasharray="6 4" marker-end="url(#ac)"/>
+<path d="M 725 240 L 725 290" fill="none" stroke="#c45f00" stroke-width="2.0" stroke-dasharray="6 4" marker-end="url(#ac)"/>
+<path d="M 940 690 L 940 795 L 60 795 L 60 240" fill="none" stroke="#c45f00" stroke-width="2.0" stroke-dasharray="6 4" marker-end="url(#ac)"/>
+<path d="M 1225 640 L 1485 640 L 1485 445 L 1470 445" fill="none" stroke="#c45f00" stroke-width="2.0" stroke-dasharray="6 4" marker-end="url(#ac)"/>
+<text x="70" y="268" font-size="11" font-weight="normal" fill="#1f2328" text-anchor="start">Bank 5, 1.2 V</text>
+<text x="70" y="284" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">CLK R14/R13</text>
+<text x="70" y="300" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">D0 P14/P13</text>
+<text x="70" y="316" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">D1 N12/P12</text>
+<text x="660" y="742" font-size="11" font-weight="normal" fill="#1f2328" text-anchor="start">Banks 3 + 4, 1.1 V (LVSTL)</text>
+<text x="660" y="758" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">DQ[15:0], DQS[1:0], DMI[1:0]: bank 3</text>
+<text x="660" y="774" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">CA[5:0], CK, CKE, CS, RESET_N: bank 4</text>
+<text x="820" y="860" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">Ball R5 (VREF3_1) reserved;</text>
+<text x="820" y="876" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">DQ uses the internal, trained VREF</text>
+<text x="1075" y="432" font-size="11" font-weight="normal" fill="#1f6feb" text-anchor="start">2500BASE-X, 3.125 Gbaud</text>
+<text x="1075" y="468" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">SD0 TX A15/A14, RX C14/B13</text>
+<text x="70" y="828" font-size="11" font-weight="normal" fill="#c45f00" text-anchor="start">I2C to sensor (1.8 V wide-range bank)</text>
+<text x="1300" y="658" font-size="11" font-weight="normal" fill="#c45f00" text-anchor="start">MDC/MDIO (1.8 V)</text>
+<path d="M 1270 700 L 1306 700" fill="none" stroke="#1f6feb" stroke-width="2.0" marker-end="url(#ad)"/>
+<text x="1314" y="704" font-size="11" font-weight="normal" fill="#1f2328" text-anchor="start">data path (arrow = direction)</text>
+<path d="M 1270 718 L 1306 718" fill="none" stroke="#c45f00" stroke-width="2.0" stroke-dasharray="6 4" marker-end="url(#ac)"/>
+<text x="1314" y="722" font-size="11" font-weight="normal" fill="#1f2328" text-anchor="start">control / set-up</text>
+<path d="M 1270 736 L 1306 736" fill="none" stroke="#1a7f37" stroke-width="2.0" marker-end="url(#ak)"/>
+<text x="1314" y="740" font-size="11" font-weight="normal" fill="#1f2328" text-anchor="start">clock (text)</text>
+<text x="1270" y="772" font-size="11" font-weight="normal" fill="#59636e" text-anchor="start">Tinted boxes are clock domains.</text>
+</svg>

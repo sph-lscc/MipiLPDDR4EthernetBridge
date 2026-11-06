@@ -1,0 +1,1254 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>csi2_rx_2l_1500</ipxact:name>
+    <ipxact:version>2.2.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_dphy_rx_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="dphy_rx" vendor="latticesemi.com" version="2.2.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="FAMILY">LFCPNX</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DEVICE">LFCPNX-100</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PACKAGE">CBG256</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SPEED">9_High-Performance_1.0V</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="OPCON">Industrial</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SIM_MODE">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DUT_INST_NAME">u_csi2_rx_2l_1500</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_TYPE">CSI2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DPHY_RX_IP">LATTICE</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_R_WIDTH">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="NUM_RX_LANE">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_GEAR_INPUT">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_GEAR">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DESKEW_INPUT">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DESKEW_EN">DISABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_LINE_RATE">1500.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DPHY_CLK_FREQ">750.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BYTECLK_MHZ">187</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BYTECLK_MHZ_FLOAT">187.5</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_LP_M_FACTOR">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_LP_D_FACTOR">75</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_CLK_MODE">HS_ONLY</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="SYNCCLK_MHZ">150.0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="HSEL">DISABLED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DYN_DEL_TH">1000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DYN_DEL_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DDRDLL_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DDRDLL_SHARE">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DYN_SEQ_ON">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="TEST_PATTERN">0b10000000001000000000000000000000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CIL_BYPASS">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="LANE_ALIGN">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PARSER">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="AXI4">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="LMMI">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CSRCMD_IMPL">SYNC</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="MISC_ON">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CRC_CHECK_IN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CRC_CHECK_MODE">Static</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CRC_CHECK">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DYNAMIC_RECONFIG">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REF_DT_STRING">custom</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REF_DT">6'h30</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="VCX_ON">OFF</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="BACK2BACK">OFF</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DROP_NULL">OFF</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_SETTLE_CYC_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DATA_SETTLE_CYC">15</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="T_DATA_SETTLE_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="T_DATA_SETTLE_INT">15</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="T_DATA_SETTLE">0b001111</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="T_CLK_SETTLE_EN">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="T_CLK_SETTLE_INT">22</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="T_CLK_SETTLE">0b010110</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DYN_DATSETTLE">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIFO_DEPTH">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIFO_TYPE">HARD_IP</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO_TYPE">PINGPONG</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO_IMPL_INPUT">EBR</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO_IMPL">HARD_IP</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO_DEPTH">256</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="NUM_QUE_ENT">4</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO_PKT_DLY">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DYN_RXFIFO_PKTDLY">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO_CTR_WIDTH">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FR_FIFO_CLKMODE">DC</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FIFO_IF">ALIGNED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RX_FIFO_MISC">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELAYB_DELMODE">ECLK_CENTERED</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELAYB_COARSEDEL">0NS</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELAYB_DELVAL_IN">0</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DELAYB_DELVAL">26</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="CTRL_DYNDEL">False</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lmmi_clk_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lmmi_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lmmi_resetn_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lmmi_resetn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lmmi_wdata_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lmmi_wdata_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lmmi_rdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lmmi_rdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lmmi_rdata_valid_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lmmi_rdata_valid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lmmi_wr_rdn_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lmmi_wr_rdn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lmmi_offset_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lmmi_offset_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lmmi_request_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lmmi_request_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lmmi_ready_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lmmi_ready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxcsr_vcx_on_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxcsr_vcx_on_i"/>
+                <ipxact:externalPortReference portRef="rxcsr_vcx_on_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxcsr_dropnull_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxcsr_dropnull_i"/>
+                <ipxact:externalPortReference portRef="rxcsr_dropnull_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxcsr_actvln_i</ipxact:name>
+            <ipxact:tiedValue>2'd1</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxcsr_actvln_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxcsr_datawidth_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxcsr_datawidth_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxcsr_datsettlecyc_i</ipxact:name>
+            <ipxact:tiedValue>8'd15</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxcsr_datsettlecyc_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxcsr_rxfifo_pktdly_i</ipxact:name>
+            <ipxact:tiedValue>16'd8</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxcsr_rxfifo_pktdly_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.axis_tvalid_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="axis_tvalid_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.axis_tdata_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="axis_tdata_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.axis_tready_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="axis_tready_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.pll_lock_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="pll_lock_i"/>
+                <ipxact:externalPortReference portRef="pll_lock_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.sync_clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="sync_clk_i"/>
+                <ipxact:externalPortReference portRef="sync_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.sync_rst_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="sync_rst_i"/>
+                <ipxact:externalPortReference portRef="sync_rst_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ready_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ready_o"/>
+                <ipxact:externalPortReference portRef="ready_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.clk_byte_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="clk_byte_o"/>
+                <ipxact:externalPortReference portRef="clk_byte_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.clk_byte_hs_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="clk_byte_hs_o"/>
+                <ipxact:externalPortReference portRef="clk_byte_hs_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.clk_lp_ctrl_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="clk_lp_ctrl_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.clk_byte_fr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="clk_byte_fr_i"/>
+                <ipxact:externalPortReference portRef="clk_byte_fr_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.reset_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="reset_n_i"/>
+                <ipxact:externalPortReference portRef="reset_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.reset_lp_n_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="reset_lp_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.reset_byte_fr_n_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="reset_byte_fr_n_i"/>
+                <ipxact:externalPortReference portRef="reset_byte_fr_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.clk_p_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="clk_p_io"/>
+                <ipxact:externalPortReference portRef="clk_p_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.clk_n_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="clk_n_io"/>
+                <ipxact:externalPortReference portRef="clk_n_io"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.d_p_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="d_p_io"/>
+                <ipxact:externalPortReference portRef="d_p_io">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.d_n_io</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="d_n_io"/>
+                <ipxact:externalPortReference portRef="d_n_io">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp_d_rx_p_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp_d_rx_p_o"/>
+                <ipxact:externalPortReference portRef="lp_d_rx_p_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp_d_rx_n_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp_d_rx_n_o"/>
+                <ipxact:externalPortReference portRef="lp_d_rx_n_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.bd_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="bd_o"/>
+                <ipxact:externalPortReference portRef="bd_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.cd_clk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="cd_clk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.cd_d0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="cd_d0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.hs_d_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="hs_d_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.hs_sync_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="hs_sync_o"/>
+                <ipxact:externalPortReference portRef="hs_sync_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp_hs_state_clk_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp_hs_state_clk_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp_hs_state_d_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp_hs_state_d_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.term_clk_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="term_clk_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.term_d_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="term_d_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.payload_en_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="payload_en_o"/>
+                <ipxact:externalPortReference portRef="payload_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.payload_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="payload_o"/>
+                <ipxact:externalPortReference portRef="payload_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.dt_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="dt_o"/>
+                <ipxact:externalPortReference portRef="dt_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>5</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.vc_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="vc_o"/>
+                <ipxact:externalPortReference portRef="vc_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.vcx_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="vcx_o"/>
+                <ipxact:externalPortReference portRef="vcx_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.wc_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="wc_o"/>
+                <ipxact:externalPortReference portRef="wc_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ecc_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ecc_o"/>
+                <ipxact:externalPortReference portRef="ecc_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>5</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.payload_bytevld_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="payload_bytevld_o"/>
+                <ipxact:externalPortReference portRef="payload_bytevld_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.payload_crc_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="payload_crc_o"/>
+                <ipxact:externalPortReference portRef="payload_crc_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>15</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.payload_crcvld_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="payload_crcvld_o"/>
+                <ipxact:externalPortReference portRef="payload_crcvld_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.crc_check_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="crc_check_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.crc_error_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="crc_error_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ecc_check_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ecc_check_o"/>
+                <ipxact:externalPortReference portRef="ecc_check_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ecc_byte_error_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ecc_byte_error_o"/>
+                <ipxact:externalPortReference portRef="ecc_byte_error_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ecc_1bit_error_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ecc_1bit_error_o"/>
+                <ipxact:externalPortReference portRef="ecc_1bit_error_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ecc_2bit_error_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ecc_2bit_error_o"/>
+                <ipxact:externalPortReference portRef="ecc_2bit_error_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.dphy_rxdatawidth_hs_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="dphy_rxdatawidth_hs_o"/>
+                <ipxact:externalPortReference portRef="dphy_rxdatawidth_hs_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.dphy_cfg_num_lanes_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="dphy_cfg_num_lanes_o"/>
+                <ipxact:externalPortReference portRef="dphy_cfg_num_lanes_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>1</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.dt2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="dt2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.vc2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="vc2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.wc2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="wc2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ecc2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ecc2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.bd0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="bd0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.bd1_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="bd1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.bd2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="bd2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.bd3_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="bd3_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.capture_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="capture_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ref_dt_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ref_dt_i"/>
+                <ipxact:externalPortReference portRef="ref_dt_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>5</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.tx_rdy_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="tx_rdy_i"/>
+                <ipxact:externalPortReference portRef="tx_rdy_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp_d0_tx_en_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp_d0_tx_en_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp_d0_tx_p_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp_d0_tx_p_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp_d0_tx_n_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp_d0_tx_n_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.pd_dphy_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="pd_dphy_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.sp_en_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="sp_en_o"/>
+                <ipxact:externalPortReference portRef="sp_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp_en_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp_en_o"/>
+                <ipxact:externalPortReference portRef="lp_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp_av_en_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp_av_en_o"/>
+                <ipxact:externalPortReference portRef="lp_av_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.sp2_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="sp2_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp2_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp2_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lp2_av_en_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lp2_av_en_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.hs_en0_settle_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="hs_en0_settle_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxdatsyncfr_state_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxdatsyncfr_state_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxemptyfr0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxemptyfr0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxemptyfr1_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxemptyfr1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxfullfr0_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxfullfr0_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxfullfr1_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxfullfr1_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxque_curstate_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxque_curstate_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxque_empty_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxque_empty_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.rxque_full_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="rxque_full_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.fifo_dly_err_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="fifo_dly_err_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.fifo_undflw_err_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="fifo_undflw_err_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.fifo_ovflw_err_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="fifo_ovflw_err_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.skewcal_det_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="skewcal_det_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.skewcal_done_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="skewcal_done_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.err_syncdet_soft_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="err_syncdet_soft_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.edgemon_done_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="edgemon_done_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.dll_freeze_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="dll_freeze_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.dll_code_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="dll_code_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.dll_lock_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="dll_lock_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.dll_code_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="dll_code_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.dll_lock_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="dll_lock_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.err_ctrl_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="err_ctrl_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.err_esc_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="err_esc_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.err_soths_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="err_soths_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.err_syncesc_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="err_syncesc_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.err_sotsynchs_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="err_sotsynchs_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.lane0_stop_state</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="lane0_stop_state"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ude5d0rn</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ude5d0rn"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ude6d1rn</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ude6d1rn"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.ude7d2rn</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="ude7d2rn"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u1tde0d3</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u1tde0d3"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.uctxupsc</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="uctxupsc"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.utxskd0n</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="utxskd0n"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u1txsk</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u1txsk"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u2txskc</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u2txskc"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u3txskc</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u3txskc"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.utxrd0en</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="utxrd0en"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u1txreq</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u1txreq"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u2txreq</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u2txreq"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u3txreq</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u3txreq"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u2tde4ck</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u2tde4ck"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u2tde5d0</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u2tde5d0"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u2tde6d1</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u2tde6d1"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u2tde7d2</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u2tde7d2"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u3tde0d3</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u3tde0d3"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u1re0d</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u1re0d"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u1re1cn</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u1re1cn"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.urxvdhs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="urxvdhs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u1rxvdhs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u1rxvdhs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u2rxvdhs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u2rxvdhs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u3rxvdhs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u3rxvdhs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.urxdhs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="urxdhs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u1rxdhs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u1rxdhs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u2rxdhs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u2rxdhs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u3rxdhs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u3rxdhs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.urxshs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="urxshs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u1rxshs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u1rxshs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u2rxshs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u2rxshs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.u3rxshs</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="u3rxshs"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.fifo_full_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="fifo_full_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.fifo_empty_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="fifo_empty_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.vcx2_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="vcx2_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.data_loadn_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="data_loadn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.data_move_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="data_move_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.data_dir_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="data_dir_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.data_coarsedly_i</ipxact:name>
+            <ipxact:tiedValue>1'b0</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="data_coarsedly_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>csi2_rx_2l_1500.data_cflag_o</ipxact:name>
+            <ipxact:tiedValue>open</ipxact:tiedValue>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="csi2_rx_2l_1500" portRef="data_cflag_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

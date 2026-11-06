@@ -1,0 +1,318 @@
+set device "LFCPNX-100"
+set device_int "jd5d80"
+set package "CBG256"
+set package_int "CBG256"
+set speed "9_High-Performance_1.0V"
+set speed_int "12"
+set operation "Industrial"
+set family "LFCPNX"
+set architecture "jd5d00"
+set partnumber "LFCPNX-100-9CBG256I"
+set WRAPPER_INST "lscc_lpddr4_mc_inst"
+set SIM_VAL 0
+set SIM_FLOAT_PRECISION "0.625"
+set FAMILY "LFCPNX"
+set DDR_TYPE 1
+set IO_TYPE "LVSTL_I"
+set CK_DQS_IO "LVSTLD_I"
+set DDR_CMD_FREQ 533.000000
+set SLEW_RATE "FAST"
+set GEAR_RATIO 8
+set ECC_ENABLE 0
+set PWR_DOWN_EN 0
+set DBI_ENABLE 0
+set READ_LATENCY 10
+set RD_PREAMBLE 2
+set RD_POSTAMBLE 1
+set WRITE_LATENCY 6
+set WR_PREAMBLE 2
+set WR_POSTAMBLE 1
+set CPU_GRP_EN 1
+set PLL_EN 1
+set INTFBKDEL_SEL "DISABLED"
+set PMU_WAITFORLOCK "ENABLED"
+set REF_OSC_CTRL "3P2"
+set REF_COUNTS "0000"
+set EN_REFCLK_MON 0
+set FVCO 1600.000000
+set CLKI_FREQ 100.000000
+set CLKI_DIVIDER_ACTUAL_STR "1"
+set FRAC_N_EN 0
+set FBK_MODE "INTCLKOP"
+set FBCLK_DIVIDER_ACTUAL_STR "1"
+set SSC_N_CODE_STR "0b000000001"
+set SSC_F_CODE_STR "0b000000000000000"
+set SS_EN 0
+set SSC_PROFILE "DOWN"
+set SSC_TBASE_STR "0b000000000000"
+set SSC_STEP_IN_STR "0b0000000"
+set SSC_REG_WEIGHTING_SEL_STR "0b000"
+set CLKOP_BYPASS 0
+set ENCLKOP_EN 0
+set CLKOP_FREQ_ACTUAL 100.000000
+set CLKOP_PHASE_ACTUAL 0.000000
+set DIVOP_ACTUAL_STR "15"
+set DELA "15"
+set PHIA "0"
+set TRIM_EN_P 0
+set CLKOP_TRIM_MODE "Falling"
+set CLKOP_TRIM "0b0000"
+set CLKOS_EN 1
+set CLKOS_BYPASS 0
+set ENCLKOS_EN 1
+set CLKOS_FREQ_ACTUAL 533.333333
+set CLKOS_PHASE_ACTUAL 0.000000
+set DIVOS_ACTUAL_STR "2"
+set DELB "2"
+set PHIB "0"
+set TRIM_EN_S 0
+set CLKOS_TRIM_MODE "Falling"
+set CLKOS_TRIM "0b0000"
+set CLKOS2_EN 1
+set CLKOS2_BYPASS 0
+set ENCLKOS2_EN 1
+set CLKOS2_FREQ_ACTUAL 50.000000
+set CLKOS2_PHASE_ACTUAL 0.000000
+set DIVOS2_ACTUAL_STR "31"
+set DELC "31"
+set PHIC "0"
+set CLKOS3_EN 0
+set CLKOS3_BYPASS 0
+set ENCLKOS3_EN 0
+set CLKOS3_FREQ_ACTUAL 100.000000
+set CLKOS3_PHASE_ACTUAL 0.000000
+set DIVOS3_ACTUAL_STR "7"
+set DELD "7"
+set PHID "0"
+set CLKOS4_EN 0
+set CLKOS4_BYPASS 0
+set ENCLKOS4_EN 0
+set CLKOS4_FREQ_ACTUAL 100.000000
+set CLKOS4_PHASE_ACTUAL 0.000000
+set DIVOS4_ACTUAL_STR "7"
+set DELE "7"
+set PHIE "0"
+set CLKOS5_EN 0
+set CLKOS5_BYPASS 0
+set ENCLKOS5_EN 0
+set CLKOS5_FREQ_ACTUAL 100.000000
+set CLKOS5_PHASE_ACTUAL 0.000000
+set DIVOS5_ACTUAL_STR "7"
+set DELF "7"
+set PHIF "0"
+set PLL_REFCLK_FROM_PIN 1
+set PLL_IO_TYPE "LVSTLD_I"
+set DYN_PORTS_EN 0
+set PLL_RST 1
+set LOCK_EN 1
+set PLL_LOCK_STICKY 0
+set LMMI_EN 1
+set APB_EN 0
+set APB_SOFT_REG_EN 0
+set LEGACY_EN 0
+set POWERDOWN_EN 0
+set IPI_CMP "0b1100"
+set CSET "8P"
+set CRIPPLE "1P"
+set IPP_CTRL "0b0110"
+set IPP_SEL "0b1111"
+set BW_CTL_BIAS "0b1111"
+set V2I_PP_RES "9K"
+set KP_VCO "0b00011"
+set V2I_KVCO_SEL "60"
+set V2I_1V_EN "ENABLED"
+set DDR_DENSITY 8
+set ROW_WIDTH 16
+set COL_WIDTH 10
+set DDR_WIDTH 16
+set DQS_WIDTH 2
+set NUM_RANKS 1
+set CA_WIDTH 6
+set CK_WIDTH 1
+set CS_WIDTH 1
+set ODT_WIDTH 1
+set AXI 1
+set AXI_ADDR_WIDTH 30
+set AXI_DATA_WIDTH 128
+set AXI_ID_WIDTH 4
+set ORDER_ID_WIDTH 3
+set AXI_LEN_WIDTH 8
+set AXI_QOS_WIDTH 4
+set AXI_CTRL_WIDTH 19
+set AXI_STRB_WIDTH 16
+set AHBL_ADDR_WIDTH 30
+set AHBL_DATA_WIDTH 64
+set MAX_BURST_LEN 64
+set SCH_NUM_WR_SUPPORTED 2
+set DATA_CLK_EN 1
+set SCH_NUM_RD_SUPPORTED 2
+set APB_INTF_EN 1
+set SCH_MEM_SIZE_BE "16,128"
+set SCH_MEM_SIZE_DATA "128,128"
+set REBUFF_SCH_MEM_SIZE "128,512"
+set APB_MEM_EN 0
+set APB_ADDR_WIDTH 12
+set APB_DATA_WIDTH 32
+set BI_RD_DATA_Q_DEPTH 4
+set BI_RD_DATA_Q_WIDTH 128
+set NUM_BANKS 8
+set RANK_WIDTH 1
+set BANK_WIDTH 3
+set OFFSET_LO 0
+set OFFSET_HI 0
+set COL_ADDR_LO 1
+set COL_ADDR_HI 10
+set BANK_ADDR_LO 11
+set BANK_ADDR_HI 13
+set ROW_ADDR_LO 14
+set ROW_ADDR_HI 29
+set CA_CTL 4
+set ECC_WIDTH_PER_EDGE 0
+set ECC_WIDTH 0
+set DQ_DATA_PER_EDGE 18
+set MC2PHY_DQ_CTRL_WIDTH 4
+set MC2PHY_DQ_WIDTH 128
+set MC2PHY_DM_WIDTH 16
+set MC2PHY_DQS_WIDTH 16
+set SCH_WR_DATA_Q_DEPTH 128
+set SCH_WR_DATA_Q_WIDTH 144
+set NUM_REQS 4
+set PHY2MC_DQ_WIDTH 128
+set PHY2MC_DM_WIDTH 16
+set PHY2MC_DQS_WIDTH 16
+set DQS_OE_WIDTH 8
+set BUS_WIDTH 16
+set CTRL_Q_DEPTH 8
+set LPDDR_MC_CS_WIDTH 4
+set LPDDR_MC_CA_WIDTH 24
+set LPDDR_MC_ODT_WIDTH 4
+set LPDDR_MC_CK_WIDTH 4
+set TRCD_VALUE 1
+set TRAS_VALUE 6
+set TRPPB_VALUE 3
+set TWR_VALUE 3
+set TRTP_VALUE 2
+set TCCD_VALUE 2
+set MWR2MWR_VALUE 8
+set TRRD_VALUE 2
+set TRFC_VALUE 38
+set TFAW_VALUE 10
+set TZQCAL_VALUE 4
+set TMRR_VALUE 2
+set TMRD_VALUE 3
+set TRPAB_VALUE 3
+set TRTW_VALUE 8
+set TDQSS 1
+set CAS2CAS_VALUE 2
+set TRD2PRE_VALUE 2
+set TWR2PRE_VALUE 7
+set TWR2RD_VALUE 5
+set TXP_VALUE 3
+set TXPSR_VALUE 39
+set IDLE_TIME 5000
+set REF_PERIOD_VALUE 520
+set REF_PERIOD_WIDTH 11
+set REF_OUTSTANDING 7
+set ZQ_PERIOD_VALUE "'hFE5029A0"
+set ZQ_PERIOD_WIDTH 32
+set ZQSTART2LATCH_VALUE 134
+set TEMPERATURE_VALUE "'hFE5029A0"
+set TEMPERATURE_WIDTH 32
+set CK_DELAY_VAL 50
+set DQS_GRP_VREF_VAL 49
+set MEM_CA_VREF_VAL 30
+set MEM_DQ_VREF_VAL 25
+set CK_SLEW_RATE "FAST"
+set CA_SLEW_RATE "FAST"
+set DQS_SLEW_RATE "FAST"
+set DQ_SLEW_RATE "FAST"
+set MC_CA_DRV 8
+set MC_DQ_DRV 8
+set MC_ODT_VAL 60
+set CA_ODT_VAL 2
+set DQ_ODT_VAL 2
+set SOC_ODT_VAL 6
+set ODTE_CK 0
+set ODTE_CS 0
+set ODTD_CA 0
+set X8ODTD 0
+set PDDS 6
+set TRND_WRLVL_0 50
+set TRND_WRLVL_1 50
+set TRND_WRLVL_2 50
+set TRND_WRLVL_3 50
+set TRND_WRLVL_4 50
+set TRND_WRLVL_5 50
+set TRND_WRLVL_6 50
+set TRND_WRLVL_7 50
+set TRND_RDCLKSEL_0 9
+set TRND_RDCLKSEL_1 9
+set TRND_RDCLKSEL_2 9
+set TRND_RDCLKSEL_3 9
+set TRND_RDCLKSEL_4 9
+set TRND_RDCLKSEL_5 9
+set TRND_RDCLKSEL_6 9
+set TRND_RDCLKSEL_7 9
+set TRND_CS_DLY 50
+set TRND_CA_DLY 50
+set TRND_RD_DLY 24
+set TRND_RD_SIGN 0
+set TRND_DQ_DBI_DLY 56
+set TRND_WR_LAT 4
+set TRND_RD_LAT 9
+set FORCE_TRN_ERR 0
+set DEV_BOARD "None"
+
+
+##================================== Generate Clocks ======================================##
+if {($PLL_EN)} {
+#    set CLK_PERIOD [expr {double(round(1000/$CLKI_FREQ))}]
+#    create_clock -name {pll_refclk_i} -period $CLK_PERIOD [get_ports pll_refclk_i]
+    ldc_set_port -iobuf IO_TYPE=$PLL_IO_TYPE [get_ports pll_refclk_i]
+}
+##=========================================================================================##
+
+
+##=========================================================================================##
+#### IO_TYPE constraints                                                                 ####
+##=========================================================================================##
+
+##================================== DQS/DQ IO Type =======================================##
+for {set i 0} {$i < $DQS_WIDTH} {incr i} {
+    ldc_set_port -iobuf IO_TYPE=$CK_DQS_IO\ DRIVE=$MC_DQ_DRV\ SLEWRATE=$DQS_SLEW_RATE\ TERMINATION=$MC_ODT_VAL [get_ports ddr_dqs_io\[$i\]]
+}
+for {set i 0} {$i < $BUS_WIDTH} {incr i} {
+    ldc_set_port -iobuf IO_TYPE=$IO_TYPE\ DRIVE=$MC_DQ_DRV\ SLEWRATE=$DQ_SLEW_RATE\ TERMINATION=$MC_ODT_VAL [get_ports ddr_dq_io\[$i\]]
+}
+
+##=================================== Data Mask ===========================================##
+for {set i 0} {$i < $DQS_WIDTH} {incr i} {
+    ldc_set_port -iobuf IO_TYPE=$IO_TYPE\ DRIVE=$MC_DQ_DRV\ SLEWRATE=$DQ_SLEW_RATE\ TERMINATION=$MC_ODT_VAL [get_ports ddr_dmi_io\[$i\]]
+}
+
+
+##============================ Clock Address and Command ==================================##
+
+for {set i 0} {$i < $CK_WIDTH} {incr i} {
+    ldc_set_port -iobuf IO_TYPE=$CK_DQS_IO\ DRIVE=$MC_CA_DRV\ SLEWRATE=$CK_SLEW_RATE [get_ports ddr_ck_o\[$i\]]
+}
+
+for {set i 0} {$i < $CS_WIDTH} {incr i} {
+    ldc_set_port -iobuf IO_TYPE=$IO_TYPE\ DRIVE=$MC_CA_DRV\ SLEWRATE=$CA_SLEW_RATE [get_ports ddr_cke_o\[$i\]]
+}
+for {set i 0} {$i < $CS_WIDTH} {incr i} {
+    ldc_set_port -iobuf IO_TYPE=$IO_TYPE\ DRIVE=$MC_CA_DRV\ SLEWRATE=$CK_SLEW_RATE [get_ports ddr_cs_o\[$i\]]
+}
+  
+for {set i 0} {$i < $CA_WIDTH} {incr i} {
+    ldc_set_port -iobuf IO_TYPE=$IO_TYPE\ DRIVE=$MC_CA_DRV\ SLEWRATE=$CA_SLEW_RATE [get_ports ddr_ca_o\[$i\]]
+}
+if {$DDR_TYPE == 0} {
+    for {set i 0} {$i < $ODT_WIDTH} {incr i} {
+        ldc_set_port -iobuf IO_TYPE=$IO_TYPE\ DRIVE=$MC_CA_DRV\ SLEWRATE=$CA_SLEW_RATE [get_ports ddr_odt_o\[$i\]]
+    }
+}
+
+ldc_set_port -iobuf IO_TYPE=$IO_TYPE\ DRIVE=$MC_CA_DRV [get_ports ddr_reset_n_o]
+
+##=========================================================================================##
