@@ -27,3 +27,6 @@ src/ip/*/eval/
 *.bak-*
 *~
 .DS_Store
+
+# Claude Code project notes (local only)
+CLAUDE.md
